@@ -1,0 +1,297 @@
+body{
+	background-color: #BBFFFD;
+	margin: 0 auto;
+}
+
+/*.sol{
+	width: 100px;
+	height: 100px;
+	background: yellow;
+	background-size: 100px 100px;
+	background-repeat: no-repeat;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: relative;
+	top: 20px;
+	left: 20px;
+} */
+/*efectos del sol*/
+
+.obj-sun {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	
+	
+}
+
+
+.obj-sun-corona {
+	position: absolute;
+	top: 17%;
+	right: 17%;
+	bottom: 17%;
+	left: 17%;
+	background: #FED35D;
+	border-radius: 50%;
+  animation: spin 15s infinite linear;
+}
+
+.obj-sun-corona > div {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.obj-sun-corona > div > span {
+	display: block;
+	position: absolute;
+	width: 16%;
+	height: 16%;
+}
+
+.obj-sun-corona > div > span > span {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.obj-sun-corona > div > span > span {
+	transform: scaleY(1.8);
+}
+
+.obj-sun-corona > div > span > span > span {
+	content: " ";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #FED35D;
+	transform: rotate(45deg);
+}
+
+.obj-sun-corona .item-1 {
+	top: -5%;
+	left: 42%;
+}
+
+.obj-sun-corona .item-2 {
+	top: 42%;
+	right: -5%;
+	transform: rotate(90deg);
+}
+
+.obj-sun-corona .item-3 {
+	bottom: -5%;
+	left: 42%;
+}
+
+.obj-sun-corona .item-4 {
+	top: 42%;
+	left: -5%;
+	transform: rotate(90deg);
+}
+
+.obj-sun-corona .item-group-2 {
+	transform: rotate(15deg);
+}
+
+.obj-sun-corona .item-group-3 {
+	
+	transform: rotate(30deg);
+}
+
+.obj-sun-corona .item-group-4 {
+	
+	transform: rotate(45deg);
+}
+
+.obj-sun-corona .item-group-5 {
+	
+	transform: rotate(60deg);
+}
+
+.obj-sun-corona .item-group-6 {
+	
+	transform: rotate(75deg);
+}
+
+.obj-sun-corona .item-group-1 > span > span {
+	transform: scaleY(1.9);
+}
+
+.obj-sun-corona .item-group-2 .item-1 > span,
+.obj-sun-corona .item-group-2 .item-3 > span {
+	transform: scaleY(1.4);
+}
+
+.obj-sun-corona .item-group-2 .item-2 > span,
+.obj-sun-corona .item-group-2 .item-4 > span {
+	transform: scaleY(1.5);
+}
+
+.obj-sun-corona .item-group-6 .item-1 > span,
+.obj-sun-corona .item-group-6 .item-3 > span {
+	transform: scaleY(1.4);
+}
+
+.obj-sun-corona .item-group-6 .item-2 > span,
+.obj-sun-corona .item-group-6 .item-4 > span {
+	transform: scaleY(1.5);
+}
+
+.obj-sun-corona .item-group-4 .item-4 > span {
+	transform: scaleY(1.6);
+}
+
+.obj-sun-corona .item-group-4 .item-1 > span,
+.obj-sun-corona .item-group-4 .item-3 > span {
+	transform: scaleY(1.6);
+}
+
+.obj-sun-corona .item-group-5 .item-4 > span {
+	transform: scaleY(1.9);
+}
+
+.obj-sun-photosphere {
+	position: absolute;
+	top: 18%;
+	right: 18%;
+	bottom: 18%;
+	left: 18%;
+	background: #EAB622;
+	box-shadow: inset -10px -10px 0 0 #e89d1c;
+	border-radius: 50%;
+}
+
+/* Keyframes */
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.techo{
+	border-bottom: 120px solid purple;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+	height: 0;
+	width: 200px;
+	position: relative;
+	left: 600px;
+	top: 100px;
+}
+
+.casa{
+	width: 340px;
+	height: 200px;
+	background: #900C3F;
+	position: relative;
+	left: 600px;
+	top: 100px;
+	z-index: 2;
+}
+
+.chimenea{
+	width: 25px;
+	height: 55px;
+	background: #d97050;
+	position: absolute;
+	top: 45px;
+	left: 180px;
+	border-bottom: 23px solid transparent;
+	border-right: 0px solid transparent;
+
+
+}
+
+.circulo{
+	width: 20px;
+	height: 20px;
+	background: gray;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position: relative;
+}
+.c1, .c2, .c3{
+	position: relative;
+	bottom: 30px;
+	left: 20px;
+}
+.c2{
+	position: relative;
+	bottom: 70px;
+	left: 40px;
+}
+.c3{
+	position: relative;
+	bottom: 110px;
+	left: 60px;
+}
+.puerta{
+	width: 100px;
+	height: 150px;
+	background: #E9573F;
+	position: relative;
+	left: 50px;
+	top: 50px;
+
+}
+.corazon{
+	width: 40px;
+	height: 40px;
+	color: red;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border-radius: 70px;
+	position: relative;
+	top: 50px;
+	left: 30px;
+	animation: latidos .5s infinite;
+	font-size: 60px;
+}
+
+@keyframes latidos {
+    from { transform: none; }
+    60% { transform: scale(1.4); }
+    to { transform: none; }
+}
+
+
+.ventana{
+	width: 100px;
+	height: 100px;
+	background: #333;
+	position: relative;
+	left: 200px;
+	bottom: 100px;
+
+}
+.pasto{
+	background-color: green;
+	width: 100%;
+	height: 106px;
+	position: relative;
+	top: 100px;
+	background-size: cover;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(30deg);
+  }
+  to { 
+    transform: rotate(390deg);
+  }}
+@keyframes rotate2 {
+  from {
+    transform: rotate(120deg);
+  }
+  to { 
+    transform: rotate(480deg);
+  }}
